@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Employees</title>
+</head>
+<body>
+  <div id="app"></div>
+  <div class="left">
+    <div class="sort">
+    <strong>Options</strong>
+  <form>
+    <label>Sort by:
+    <select name="sortby" id="sortby">
+    <option value="nameAsc">Name (Ascending)</option>
+    <option value="nameDesc">Name (Descending</option>
+    <option value="salaryAsc">Salary (Ascending)</option>
+    <option value="salaryDesc">Salary (Descending)</option>
+  </select>
+</label>
+  </form>
+  </div>
+  
+  <div class="filter">
+  <form>
+    <legend>Filter by roles</legend>
+    <label><input name="databaseAdministrator" type="checkbox" value="" />Database Administrator</label><br>
+      <label><input name="seniorQaAnalyst" type="checkbox" value="2" />Senior QA Analyst</label><br>
+      <label><input name="juniorQaAnalyst" type="checkbox" value="3" />Junior QA Analyst</label><br>
+      <label><input name="seniorWebDesigner" type="checkbox" value="4" />Senior Web Designer</label><br>
+      <label><input name="juniorWebDesigner" type="checkbox" value="5" />Junior Web Designer</label><br>
+      <label><input name="juniorWebDeveloper" type="checkbox" value="6" />Junior Web Developer</label><br>
+      <label><input name="seniorWebDeveloper" type="checkbox" value="7" />Senior Web Developer</label><br>
+      <label><input name="dataAnalyst" type="checkbox" value="8" />Data Analyst</label><br>
+      <label><input name="juniorDevopsEngineer" type="checkbox" value="9" />Junior Devops Engineer</label><br>
+      <label><input name="seniorDevopsEngineer" type="checkbox" value="10" />Senior Devops Engineer</label><br>
+      <label><input name="networkAdministrator" type="checkbox" value="11" />Network Administrator</label><br>
+      <label><input name="projectManager" type="checkbox" value="12" />Project Manager</label><br>
+      
+  </form>
+  </div>
+</div>
+
+<div class="right">
+  <div>
+<strong>Employees</strong>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Salary</th>
+      </tr>    
+    </thead>
+    <tbody id="tbody">
+      
+    </tbody>
+  </table>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+div.left {
+  display: flex;
+}
+
+div.right {
+  display: flex;
+}
+
+div.sort, div.filter {
+  flex-direction: column;
+}
